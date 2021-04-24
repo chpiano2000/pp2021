@@ -1,21 +1,14 @@
-from Student import student
-from Courses import Courses
-from gpa import GPA
+from Input import Input
+from Oupt import Output
 
-st = student()
-st.inputSt('Aiden', 'bi10-124', '2001', {})
-st.inputSt('dat', 'bi9-066', '1000', {})
-st.inputSt('ngoc anh', 'bi10-010', '2001', {})
-m = course('','')
-m.inputCourse(0, 'programing with python')
-
-m.mark('Aiden', 'programing with python', 10)
-m.mark('ngoc anh', 'programing with python', 20)
-m.mark('dat', 'programing with python', 15)
-
-m.mark('Aiden', 'signal', 12.5)
-m.mark('ngoc anh', 'signal', 15)
-m.mark('dat', 'signal', 17.6)
-
-gpa = GPA()
-gpa.sort()
+class domain:
+    def __init__(self):
+        pass
+    def execute(self):
+        st = Input('' ,'', '' ,  0)
+        st.inputSt('dat', 'bi9-066', '2000', (('Advanced Programming ','15'), ('French ','17'), ('Singal ','18')))
+        st.inputSt('Aiden', 'bi10-124', '2001', (('Advanced Programming ','17.5'),('French ','15.25'), ('Singal ','14.25')) )
+        st.inputSt('Na', 'bi10-010', '2001', (('Advanced Programming','16.75'),('French','18.04'), ('Signal', '20')) )
+        
+        display = Output(None)
+        display.listSt(st.student_list)	
