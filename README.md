@@ -13,3 +13,11 @@ Student Info
 * Student ID: BI9-066
 
 
+# Practice Session
+## Labwork 1: Student mark managemet
+## Labwork 2: OOP'ed student mark management
+## Labwork 3: Some maths and decorations
+## Labwork 4: modularization
+## Labwork 5: persistent info
+## Labwork 6: pickled management system
+ 
