@@ -1,5 +1,6 @@
 from Input import Input
 from Oupt import Output
+import zipfile
 
 class domain:
     def __init__(self):
@@ -10,8 +11,10 @@ class domain:
         st.inputSt('Aiden', 'bi10-124', '2001', (('Advanced Programming ','17.5'),('French ','15.25'), ('Singal ','14.25')) )
         st.inputSt('Na', 'bi10-010', '2001', (('Advanced Programming','16.75'),('French','18.04'), ('Signal', '20')) )
         
-        display = Output()
-        display.listSt(st.student_list)
+        st.writeFile(st.student_list)
+        
+        st.compress('students.dat')
+        st.decompress()
 
 if __name__ == "__main__":
     main = domains() 
